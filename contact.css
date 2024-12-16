@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+
+body{
+  font-family: Oswald;
+  background-color: rgb(44, 52, 51);
+}
+
+.contact {
+  margin: 100px 0;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.contactDetail {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 1.5%;
+  gap: 60px;
+  align-items: center;
+  flex-direction: column;
+  border-right:2px solid #fff ;
+
+}
+
+.contactDetail form {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 250px;
+}
+
+form .input1,form .input2{
+  gap: 10px;
+}
+
+form input {
+  width: 250px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid gray;
+}
+
+form .check input {
+  width: 20px;
+  height: 20px;
+}
+
+form .check {
+  display: flex;
+  gap: 20px;
+}
+
+.Message{
+  position: relative;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start ;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0 50px;
+}
+
+.Message textarea{
+  width: 90%;
+  height: 50%;
+    
+}

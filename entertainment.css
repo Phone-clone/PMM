@@ -1,0 +1,387 @@
+.aquarium {
+  position: relative;
+  height: 100vh;
+}
+
+.background-image img {
+  width: 100%;
+  height: 100vh;
+}
+
+.seacreatures {
+  width: 200px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.seacreatures img {
+  width: 200px;
+  height: 150px;
+}
+
+.jellyfish {
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: jellyfishanimation 10s infinite linear;
+}
+
+@keyframes jellyfishanimation {
+  0% {
+    top: 200px;
+  }
+  50% {
+    top: 0px;
+  }
+  100% {
+    top: 200px;
+  }
+}
+
+.pufferfish {
+  position: absolute;
+  left: 1200px;
+  top: 200px;
+  animation: seahorse 10s infinite linear;
+}
+
+@keyframes seahorse {
+  0% {
+    position: absolute;
+    left: 1200px;
+    top: 200px;
+  }
+  25% {
+    position: absolute;
+    left: 1000px;
+    top: 100px;
+  }
+
+  50% {
+    position: absolute;
+    left: 800px;
+    top: 200px;
+  }
+  75% {
+    position: absolute;
+    left: 1000px;
+    top: 400px;
+  }
+  100% {
+    position: absolute;
+    left: 1200px;
+    top: 200px;
+  }
+}
+
+.fish {
+  position: absolute;
+  top: 200px;
+  left: 350px;
+  animation: fishanimation 10s infinite linear;
+  animation-delay: 2s;
+}
+
+.fish2 {
+  position: absolute;
+  top: 0px;
+  left: 600px;
+  animation: fish2animation 10s infinite linear;
+}
+
+@keyframes fishanimation {
+  0% {
+    transform: rotate(0deg);
+    left: 350px;
+  }
+  50% {
+    transform: rotate(360deg);
+    animation-delay: 2s;
+    left: 700px;
+  }
+  100% {
+    transform: rotate(0deg);
+    left: 350px;
+  }
+}
+
+@keyframes fish2animation {
+  0% {
+    left: 600px;
+  }
+
+  50% {
+    left: 200px;
+  }
+
+  100% {
+    left: 600px;
+  }
+}
+
+.seaweed {
+  position: absolute;
+  top: 588px;
+  left: 100px;
+}
+
+.whale {
+  position: absolute;
+  top: 400px;
+  left: 100px;
+  transform: scaleX(-1);
+  animation: whaleAnimation 10s infinite linear;
+}
+
+@keyframes whaleAnimation {
+  0% {
+    top: 400px;
+    left: 100px;
+  }
+  50% {
+    top: 400px;
+    left: 300px;
+  }
+  100% {
+    top: 400px;
+    left: 100px;
+  }
+}
+
+.reef {
+  position: absolute;
+  top: 600px;
+  left: 1200px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+  background-color: rgb(254, 1, 1);
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.buttons button:active {
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.gametitle {
+  display: flex;
+  justify-content: center;
+  color: blue;
+  font-size: 30px;
+}
+
+.buttons img {
+  width: 50%;
+}
+
+.water {
+  background: url("./aquarium/beautiful-plants-natural-environment.jpg");
+  background-size: 100%;
+  width: 100%;
+  height: 700px;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.Fish1 {
+  width: 20%;
+  height: 30%;
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  animation: FishOne 3s infinite linear;
+}
+
+@keyframes FishOne {
+  0% {
+    top: 10%;
+    left: 2%;
+  }
+  50% {
+    top: 20%;
+    left: 2%;
+  }
+  100% {
+    top: 10%;
+    left: 2%;
+  }
+}
+
+.Fish2 {
+  width: 10%;
+  height: 20%;
+  position: absolute;
+  top: 10%;
+  animation: FishTwo 3s infinite linear;
+}
+
+@keyframes FishTwo {
+  0% {
+    top: 10%;
+    right: 20%;
+  }
+  50% {
+    top: 15%;
+    right: 20%;
+  }
+  100% {
+    top: 10%;
+    right: 20%;
+  }
+}
+
+.Fish3 {
+  width: 10%;
+  height: 20%;
+  position: absolute;
+  top: 5%;
+  left: -5%;
+  animation: FishThree 15s infinite linear;
+}
+
+@keyframes FishThree {
+  0% {
+    top: 5%;
+    left: -5%;
+  }
+  100% {
+    top: 5%;
+    left: 100%;
+  }
+}
+
+.Fish4 {
+  width: 10%;
+  height: 20%;
+  position: absolute;
+  top: 60%;
+    right: -5%;
+    animation: FishFour 15s infinite linear;
+}
+
+@keyframes FishFour {
+  0% {
+    top: 60%;
+    right: -5%;
+  }
+  100% {
+    top: 60%;
+    right: 100%;
+  }
+}
+
+.Fish5 {
+  width: 10%;
+  height: 20%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: rgb(187, 185, 185);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.container ul {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+
+.container ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.container ul li {
+  text-align: center;
+  list-style: none;
+}
+
+.container ul li a:hover {
+  color: rgb(3, 3, 191);
+}
+
+.display {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .background-image img {
+    height: 400px;
+    background-repeat: no-repeat;
+  }
+
+  .Fish1 {
+    height: 14%;
+  }
+
+  .Fish2 {
+    width: 15%;
+    height: 16%;
+    position: absolute;
+    right: 0%;
+  }
+
+  .Fish3 {
+    width: 10%;
+    height: 5%;
+    position: absolute;
+    right: 50%;
+  }
+
+  .Fish4 {
+    width: 10%;
+    height: 11%;
+    position: absolute;
+    top: 5%;
+    right: 30%;
+  }
+
+  .Fish5 {
+    width: 10%;
+    height: 9%;
+    position: absolute;
+    top: 65%;
+  }
+
+  .gametitle {
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .buttons {
+    width: 80vw;
+    margin: 0 auto;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Chau+Philomene+One:ital@0;1&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: poppins;
+}
+
+body {
+  padding-top: 60px;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0.3;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  z-index: 1000;
+  animation: dropdown linear;
+  animation-duration: 0.3s;
+}
+
+nav ul li {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  transition: all ease 0.5s;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+
+nav ul li a:hover {
+  background-color: lightgray;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.hello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  padding: 500px;
+}
+
+.about {
+  height: 100px;
+}
+
+.about h1 {
+  display: flex;
+  justify-content: center;
+  color: blue;
+  padding-top: 50px;
+  font-size:40px ;
+  font-family:Chau Philomene One;
+}
+
+.info1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 300px;
+}
+
+.text1 {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: flex-start;
+  flex-direction: column;
+  animation: intro linear;
+  animation-duration: 0.5s;
+  margin: auto;
+}
+
+.photo {
+  width: 400px;
+  height: 400px;
+  animation: intro2 linear;
+  animation-duration: 0.5s;
+  margin: 0 auto;
+}
+
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@keyframes intro {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes intro2 {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.text1 h3,.text1 h3 div {
+  font-family:Chau Philomene One;
+  font-size: 50px;
+}
+
+.hometown {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  background: url("img/hero-myanmar-yangon-1531-1615797053.jpg");
+  width: 1000px;
+  height: 500px;
+  margin: auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  animation: appear ease;
+  animation-timeline: view();
+  animation-range: entry cover 40%;
+}
+
+.hometowntext {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px 50px;
+  background-image: linear-gradient(to left, rgb(40, 40, 40), rgba(0, 0, 0, 0));
+  color: white;
+}
+
+.info3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+  gap: 50px;
+  padding: 50px 50px 0px 50px;
+  animation: appear ease;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.YTU {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: aqua;
+  background: url(img/Yangon_Technological_University_01.jpg);
+  background-size: 500px 400px;
+  width: 100%;
+  height: 400px;
+
+  background-repeat: no-repeat;
+}
+
+.NMA {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: brown;
+  background: url(img/NCC-Education.jpg);
+  background-size: 500px 400px;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+}
+
+.SBS {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: blanchedalmond;
+  background: url(img/sbs.jpg);
+  background-size: 500px 400px;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+}
+
+.info3 p {
+  height: 60%;
+  padding: 20px 20px;
+  background-image: linear-gradient(to top, rgb(23, 57, 97), rgba(0, 0, 0, 0));
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+footer{
+  height: 200px;
+}
+
+footer h1 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-family:Chau Philomene One;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 50%;
+  margin: 0 auto;
+}
+
+footer ul li a {
+  text-decoration: none;
+  transition: all ease 0.5s;
+  color: white;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+}
+
+footer ul li a:hover {
+  color: rgb(199, 180, 180);
+}
+
+footer {
+  background-color: rgb(47, 46, 46);
+  margin-top: 0px;
+
+}
+
+footer img {
+  width: 40px;
+  border-radius: 20px;
+  box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.4);
+  transition: all ease-in-out 0.3s;
+}
+
+footer img:hover {
+  box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.4);
+}
+
+.icons li {
+  position: relative;
+}
+
+footer img:active {
+  box-shadow: none;
+}
+
+.icons {
+  width: 275px;
+  padding-top: 10px;
+}
+
+.hometownphoto img {
+  width: 700px;
+  background-color: lightgray;
+  object-fit: cover;
+
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes dropdown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes comeup {
+  from {
+    transform: translateY(200px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.bars {
+  display: none;
+}
+
+.about1{
+  text-align: center;
+  margin: 50px;
+}
+
+.about1 h1{
+  font-size:40px ;
+  font-family:Chau Philomene One;
+}
+
+
+
+.container{
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+}
+
+@media (max-width: 1000px) {
+  nav {
+    width: 100vw;
+  }
+
+  nav ul li a {
+    display: none;
+  }
+  .bars {
+    display: block;
+  }
+  .info1 {
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+  }
+  .info1 img {
+    width: 80%;
+  }
+  .photo div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .text1 {
+    text-align: center;
+    width: 80%;
+  }
+
+  .about {
+    margin-top: 500px;
+  }
+
+  .hometown {
+    background: rgb(209, 208, 208);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hometowntext {
+    width: 80%;
+    background: transparent;
+    padding: 50px 0px;
+  }
+
+  .hometowntext h2 {
+    color: black;
+  }
+
+  .info3{
+    flex-wrap: wrap;
+  }
+
+  .about{
+    margin-top: 30px;
+  }
+  footer{
+    margin-top:1000px ;
+    width: 100vw;
+    height: 400px;
+  }
+ 
+  .about1{
+    margin-top: 500px;
+  }
+}
